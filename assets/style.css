@@ -1,0 +1,559 @@
+/* Use, tweak, improve, enjoy. Just link back! */
+/* http://marvelapp.com */
+/* http://twitter.com/olegtsaplin */
+
+body {
+	font-family: 'Nunito', "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	/*font-family: "Avenir LT W01 35 Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 14px;
+	text-align: center;
+	color: #1e1e1e;
+}
+
+h1 {
+	font-size: 27px;
+	line-height: 1;
+}
+
+header h1 {
+	padding:1rem 0;
+	text-transform: uppercase;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+}
+
+header {
+	padding: 4rem 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .wrap{
+	width:22.7999rem;
+	margin: 0 auto;
+}
+
+section, .app-feature {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.app-feature img {
+	-webkit-box-shadow: 0 0 0 3px #111;
+	box-shadow: 0 0 0 3px #111;
+}
+
+.app-feature:nth-of-type(even) {
+	text-align:left;
+
+}
+
+.app-feature:nth-of-type(even) img {
+	float:right;
+}
+
+.app-feature:nth-of-type(odd) {
+	text-align:right;
+}
+
+.app-feature:nth-of-type(odd) img {
+	float:left;
+}
+
+h1 .line-one, h1 .line-two {
+	display:block;
+	margin:0;
+}
+
+.logo {
+	height: 70px;
+	margin-top: 8px;
+	float:left;
+	margin-left:-9px;
+}
+
+h1 .line-one {
+	font-size:0.87em;
+	text-align: right;
+}
+
+h1 .line-two {
+	font-size:1.01em;
+	text-align: right;
+}
+
+a {
+	color: #36a6ff;
+	webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.device, .device div, *:before, *:after {
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1);
+	-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	-o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+a:hover {
+	color: #0079da;
+}
+
+.download {
+	line-height: 48px;
+	display: block;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: #883de4;
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	width: 190px;
+	margin: 20px auto 0 auto;
+}
+
+.download:hover {
+	color: white;
+}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.clearfix {
+	clear:both;
+	display:block;
+}
+
+.app-feature {
+	display:block;
+	position: relative;
+	height:auto;
+	width:100%;
+	margin:0 auto;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.app-feature > div {
+	width:640px;
+	margin:4rem auto;
+}
+
+.app-feature h1, .app-feature p {
+	position: relative;
+	margin:auto;
+	line-height: 1;
+	display:inline-block;
+	width:50%;
+	clear:none;
+	margin-bottom:1rem;
+}
+
+.app-feature h1 {
+	font-size:1.5rem;
+}
+
+.app-feature p {
+	font-size:1.2rem;
+	font-weight:100;
+}
+
+section .wrap {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 4rem 0;
+}
+
+section h1 {
+	position: absolute;
+	width: 100%;
+	top: 100px;
+	left: 0;
+}
+
+section.white {
+	background: #1e1e1e;
+}
+
+#s5.white, #s5.white .select-landscape {
+	color: black;
+}
+
+section.black h1, section.white, section.black .select-landscape, section.white .select-landscape {
+	color: white;
+}
+
+div.silver {
+	background: white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a {
+	text-decoration: none;
+}
+
+.background-screenshots {
+	position: absolute;
+	height: 778px;
+	width:100%;
+	overflow: visible;
+	z-index:900;
+	margin: 0 auto;
+	opacity:0.3;
+}
+
+.background-screenshot {
+	position: absolute;
+	width: 320px;
+	height: 568px;
+	z-index: 2;
+	text-align: left;
+	text-indent: -999px;
+	margin:3px auto 0 auto;
+	display: block;
+}
+
+.background-screenshot:nth-child(1) {
+	left:-618px;
+}
+
+.background-screenshot:nth-child(2) {
+	left:-298px;
+}
+
+.background-screenshot:nth-child(3) {
+	left:22px;
+}
+
+.background-screenshot:nth-child(4) {
+	left:342px;
+}
+
+.background-screenshot:nth-child(5) {
+	left:662px;
+}
+
+.top-bar, .bottom-bar {
+	height: 3px;
+	background: black;
+	width: 100%;
+	display: block;
+}
+
+.middle-bar {
+	width: 3px;
+	height: 4px;
+	top: 0;
+	left: 90px;
+	background: black;
+	position: absolute;
+}
+
+.device .screen {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	z-index: 2;
+	text-align: left;
+	text-indent: -999px;
+	display: block;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	-webkit-box-shadow: 0 0 0 3px #111;
+	box-shadow: 0 0 0 3px #111;
+}
+
+.device .screen:before, .background-screenshot:before {
+	content: '';
+	display: block;
+	text-indent: -9999px;
+	height: 34px;
+	display: inline-block;
+	text-align: left;
+	width: 96px;
+	position: absolute;
+	top: 50%;
+	margin-top: -17px;
+	left: 50%;
+	margin-left: -48px;
+	background-image: url(https://marvelapp.com/static/site_assets/images/logo.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 96px 68px;
+}
+
+.phone-wrapper {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: relative;
+}
+
+.phone-wrapper .device, #iphone5c .device {
+	padding: 105px 22px;
+	margin: 0 auto;
+	background: #2c2b2c;
+	position: relative;
+	width: 320px;
+	height: 568px;
+	display: block;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	z-index:1000;
+}
+
+.phone-wrapper.landscape .device, #iphone5c.landscape .device {
+	padding: 22px 105px;
+	height: 320px;
+	width: 568px;
+}
+
+.phone-wrapper .inner, #iphone5c .inner {
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	-moz-border-radius: 46px;
+	-webkit-border-radius: 46px;
+	border-radius: 46px;
+	background: #1e1e1e;
+	z-index: 1;
+}
+
+.phone-wrapper .sleep, #iphone5c .sleep {
+	position: absolute;
+	top: -4px;
+	right: 60px;
+	width: 60px;
+	height: 4px;
+	-webkit-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+	background: #282727;
+}
+
+.phone-wrapper.landscape .sleep, #iphone5c.landscape .sleep {
+	right: -4px;
+	top: calc(100% - 120px);
+	height: 60px;
+	width: 4px;
+	-webkit-border-radius: 0 2px 2px 0;
+	border-radius: 0 2px 2px 0;
+}
+
+.phone-wrapper .volume, #iphone5c .volume {
+	position: absolute;
+	left: -4px;
+	top: 180px;
+	z-index: 0;
+	height: 27px;
+	width: 4px;
+	-webkit-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+	background: #282727;
+}
+
+.phone-wrapper.landscape .volume, #iphone5c.landscape .volume {
+	width: 27px;
+	height: 4px;
+	top: -4px;
+	left: calc(100% - 180px);
+	-webkit-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.phone-wrapper .volume:before, #iphone5c .volume:before {
+	position: absolute;
+	left: 0;
+	top: -75px;
+	height: 35px;
+	width: 4px;
+	-webkit-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+	background: inherit;
+	content: '';
+	display: block;
+}
+
+.phone-wrapper.landscape .volume:before, #iphone5c.landscape .volume:before {
+	width: 35px;
+	height: 4px;
+	top: 0;
+	right: -75px;
+	left: auto;
+	-webkit-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.phone-wrapper .volume:after, #iphone5c .volume:after {
+	position: absolute;
+	left: 0;
+	bottom: -64px;
+	height: 27px;
+	width: 4px;
+	-webkit-border-radius: 2px 0 0 2px;
+	border-radius: 2px 0 0 2px;
+	background: inherit;
+	content: '';
+	display: block;
+}
+
+.phone-wrapper.landscape .volume:after, #iphone5c.landscape .volume:after {
+	bottom: 0;
+	left: -64px;
+	z-index: 999;
+	height: 4px;
+	width: 27px;
+	-webkit-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.phone-wrapper .screen {
+	background: rgb(226,228,228);
+	background: -moz-linear-gradient(top, rgba(226,228,228,1) 0%, rgba(125,130,129,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(226,228,228,1)), color-stop(100%,rgba(125,130,129,1)));
+	background: -webkit-linear-gradient(top, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,228,228,1) 0%,rgba(125,130,129,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e4e4', endColorstr='#7d8281',GradientType=0 );
+}
+
+.phone-wrapper .camera, #iphone5c .camera {
+	background: #3c3d3d;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 32px;
+	left: 50%;
+	margin-left: -5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 3;
+}
+
+.phone-wrapper.landscape .camera, #iphone5c.landscape .camera {
+	left: calc(100% - 32px);
+	top: 50%;
+	margin-left: 0;
+	margin-top: -5px;
+}
+
+.phone-wrapper .sensor, #iphone5c .sensor {
+	background: #3c3d3d;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 60px;
+	left: 160px;
+	z-index: 3;
+	margin-left: -32px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.phone-wrapper.landscape .sensor, #iphone5c.landscape .sensor {
+	top: 160px;
+	left: calc(100% - 60px);
+	margin-left: 0;
+	margin-top: -32px;
+}
+
+.phone-wrapper .speaker, #iphone5c .speaker {
+	background: #292728;
+	width: 64px;
+	height: 10px;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	margin-left: -32px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 3;
+}
+
+.phone-wrapper.landscape .speaker, #iphone5c.landscape .speaker {
+	height: 64px;
+	width: 10px;
+	left: calc(100% - 60px);
+	top: 50%;
+	margin-left: 0;
+	margin-top: -32px;
+}
+
+.phone-wrapper .home {
+	-moz-border-radius: 36px;
+	-webkit-border-radius: 36px;
+	border-radius: 36px;
+	width: 68px;
+	-webkit-box-shadow: inset 0 0 0 4px #2c2b2c;
+	box-shadow: inset 0 0 0 4px #2c2b2c;
+	height: 68px;
+	position: absolute;
+	left: 50%;
+	margin-left: -34px;
+	bottom: 19px;
+	z-index: 3;
+}
+
+.phone-wrapper.landscape .home {
+	left: 19px;
+	bottom: 50%;
+	margin-bottom: -34px;
+	margin-left: 0;
+}
+
+.phone-wrapper.silver .device {
+	background: #bcbcbc;
+}
+
+.phone-wrapper.gold .device {
+	background: #f1e2d0;
+}
+
+.phone-wrapper.silver .inner {
+	background: #fcfcfc;
+}
+
+.phone-wrapper.silver .home {
+	-webkit-box-shadow: inset 0 0 0 4px #bcbcbc;
+	box-shadow: inset 0 0 0 4px #bcbcbc;
+}
+
+.phone-wrapper.gold .home {
+	-webkit-box-shadow: inset 0 0 0 4px #f1e2d0;
+	box-shadow: inset 0 0 0 4px #f1e2d0;
+}
+
+.silver .home:after, .gold .home:after {
+	border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.phone-wrapper.silver .top-bar, .phone-wrapper.silver .bottom-bar {
+	background: #eaebec;
+}
+
+.phone-wrapper.silver .volume, .phone-wrapper.silver .sleep,  #iphone4s.silver .volume, #iphone4s.silver .sleep {
+	background: #d6d6d6;
+}
+
+.phone-wrapper.gold .volume, .phone-wrapper.gold .sleep {
+	background: #ebdac7;
+}
