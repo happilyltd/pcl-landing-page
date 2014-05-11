@@ -25,8 +25,22 @@ header h1 {
 	border-bottom:3px solid black;
 }
 
-header {
+header, footer {
 	padding: 4rem 0;
+}
+
+footer {
+	color:#444;
+	font-weight:200;
+	text-align: left;
+}
+
+footer > div {
+	width: 640px;
+	margin:0 auto;
+}
+
+header {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -35,8 +49,24 @@ header .wrap{
 	margin: 0 auto;
 }
 
+.on-app-store {
+	display:inline-block;
+}
+
 section, .app-feature {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.app-download {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.app-feature.app-feature--download h1 {
+	float:left;
+	width:50%;
+	margin-bottom:0;
+	margin-top:3px;
+	text-align: left;
 }
 
 .app-feature img {
@@ -59,6 +89,37 @@ section, .app-feature {
 
 .app-feature:nth-of-type(odd) img {
 	float:left;
+}
+
+.app-store-cta {
+	display:inline-block;
+	font-size:1rem;
+	padding:0.5em 1em;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background-color:#0450A1;
+	color:#ffffff;
+	margin:1em 0;
+	font-weight:400;
+}
+
+.app-store-cta--victoria {
+	background-color:#009FE0;
+	color:#ffffff;
+}
+
+.app-store-cta--circle {
+	background-color:#F8D42D;
+	color:#113892;
+}
+
+.app-store-cta--central {
+	background-color:#E41F1F;
+	color:#ffffff;
+}
+
+.app-store-cta:hover {
+	color:#fffffe;
 }
 
 h1 .line-one, h1 .line-two {
@@ -300,6 +361,7 @@ a {
 	height: 100%;
 	display: table;
 	position: relative;
+	overflow: hidden;
 }
 
 .phone-wrapper .device, #iphone5c .device {
@@ -557,3 +619,88 @@ a {
 .phone-wrapper.gold .volume, .phone-wrapper.gold .sleep {
 	background: #ebdac7;
 }
+
+@media only screen 
+and (max-width : 320px),
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	body {
+		font-size:14px;
+	}
+
+	header .wrap {
+		width:auto;
+		margin:2rem 1rem;
+	}
+
+	section .wrap {
+		padding:2rem 1rem;
+	}
+
+	header .logo {
+		height:66px;
+	}
+
+	header .wrap h1 {
+		font-size:24px;
+	}
+
+	header .wrap h1 .line-two {
+		font-size:1.06em;
+	}
+
+	.app-feature, footer, header {
+		width:100%;
+		padding:0;
+	}
+
+	.app-feature > div, footer > div {
+		text-align:center;
+		padding:2rem 1rem 0 1rem;
+		width:auto;
+		margin:0;
+	}
+
+	.on-app-store {
+		margin-bottom:2rem;
+	}
+
+	.app-feature h1, footer h1, .app-feature.app-feature--download h1 {
+		text-align:center;
+		margin:0 auto 2rem auto;
+		width:100%;
+	}
+
+	.phone-wrapper .device {
+		width:276px;
+		height:490px;
+	}
+
+	.device .screen {
+		width:276px;
+		height:490px;
+	}
+
+	.app-store-cta {
+		margin:2rem auto 2rem auto;
+	}
+
+	.background-screenshots {
+		display:none;
+	}
+
+	.app-feature img {
+		float:none!important;
+	}
+
+	.app-feature p {
+		width:auto;
+		margin:2rem 0 0 0;
+	}
+
+	footer {
+		padding-bottom: 2rem;
+	}
+}
+
+
