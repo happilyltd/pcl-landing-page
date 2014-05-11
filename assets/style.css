@@ -40,8 +40,8 @@ section, .app-feature {
 }
 
 .app-feature img {
-	-webkit-box-shadow: 0 0 0 3px #111;
-	box-shadow: 0 0 0 3px #111;
+	-webkit-box-shadow: 0 0 30px 0 rgba(202, 202, 202, 0.13);
+	box-shadow: 0 0 30px 0 rgba(202, 202, 202, 0.13);
 }
 
 .app-feature:nth-of-type(even) {
