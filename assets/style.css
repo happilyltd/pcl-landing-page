@@ -158,10 +158,10 @@ h1 .line-one, h1 .line-two {
 }
 
 .logo {
-	height: 70px;
-	margin-top: 8px;
+	height: 50px;
+	margin-top: 20px;
 	float:left;
-	margin-left:-9px;
+	/*margin-left:-9px;*/
 }
 
 h1 .line-one {
@@ -172,6 +172,7 @@ h1 .line-one {
 h1 .line-two {
 	font-size:1.01em;
 	text-align: right;
+	margin-top:0.15em;
 }
 
 a {
@@ -680,8 +681,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	}
 
 	header .logo {
-		height: 50px;
-		margin-top: 12px;
+		height: 35px;
+		/*margin-top: 12px;*/
 		line-height: 50px;
 	}
 
@@ -689,8 +690,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		font-size:1.2rem;
 	}
 
+	header .wrap h1 .line-one {
+		font-size:0.85em;
+	}
+
 	header .wrap h1 .line-two {
-		font-size:1.06em;
+		font-size:1em;
 	}
 
 	.app-feature, footer, header {
