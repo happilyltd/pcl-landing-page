@@ -76,19 +76,56 @@ section, .app-feature {
 
 .app-feature:nth-of-type(even) {
 	text-align:left;
-
 }
 
-.app-feature:nth-of-type(even) img, .app-feature:nth-of-type(even) form {
+.app-feature:nth-of-type(even) img, .app-feature:nth-of-type(even) .floater {
 	float:right;
+}
+
+.app-feature .floater {
+	width:50%;
+}
+
+.app-feature:nth-of-type(even) .reverse-floater {
+	float:left;
+	width:50%;
+}
+
+.app-feature:nth-of-type(even) .reverse-floater p {
+	float:none;
+	width:auto;
+}
+
+.app-feature:nth-of-type(even) .floater input {
+	float:right;
+}
+
+.app-feature:nth-of-type(even) .floater input[type=submit] {
+	clear:right;
 }
 
 .app-feature:nth-of-type(odd) {
 	text-align:right;
 }
 
-.app-feature:nth-of-type(odd) img, .app-feature:nth-of-type(odd) form {
+.app-feature:nth-of-type(odd) img, .app-feature:nth-of-type(odd) .floater {
 	float:left;
+}
+
+.app-feature:nth-of-type(odd) .floater input {
+	float:left;
+}
+
+.app-feature:nth-of-type(odd) .floater input[type=submit] {
+	clear:left;
+}
+
+.app-feature .subtext {
+	font-size:0.8rem;
+	color:#888;
+	margin:0.5rem 0;
+	text-align: right;
+	width:100%;
 }
 
 .standard-cta {
@@ -656,9 +693,7 @@ a {
 }
 
 @media only screen 
-and (max-width : 320px),
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
+and (max-width : 320px) {
 	.mobile-only {
 		display:block;
 	}
@@ -742,19 +777,39 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		display:none;
 	}
 
-	.app-feature img, .app-feature form {
+	.app-feature img, .app-feature .floater {
 		float:none!important;
 	}
 
-	.app-feature form {
+	.app-feature .floater {
+		width:100%;
 		padding-bottom:2rem;
 	}
 
-	.app-feature form input {
-		margin:1rem auto;
+	.app-feature .subtext {
+		text-align: center;
+		margin:1rem 0 0 0;
+		font-size:0.9rem;
 	}
 
-	.app-feature form input[type=submit] {
+	.app-feature .reverse-floater, .app-feature:nth-of-type(odd) .reverse-floater, .app-feature:nth-of-type(even) .reverse-floater {
+		width:100%;
+	}
+
+	.app-feature .reverse-floater p {
+		width:100%;
+	}
+
+	.app-feature .floater input[type=email] {
+		text-align: center;
+	}
+
+	.app-feature .floater input, .app-feature:nth-of-type(odd) .floater input, .app-feature:nth-of-type(even) .floater input {
+		margin:1rem auto;
+		float:none;
+	}
+
+	.app-feature .floater input[type=submit] {
 		margin:0.5 auto;
 	}
 
@@ -763,8 +818,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		margin:2rem 0 0 0;
 	}
 
-	.app-feature p:first-of-type {
-		width:auto;
+	.keep-in-touch p {
 		margin:0 0 1rem 0;
 	}
 
