@@ -79,7 +79,7 @@ section, .app-feature {
 
 }
 
-.app-feature:nth-of-type(even) img {
+.app-feature:nth-of-type(even) img, .app-feature:nth-of-type(even) form {
 	float:right;
 }
 
@@ -87,39 +87,69 @@ section, .app-feature {
 	text-align:right;
 }
 
-.app-feature:nth-of-type(odd) img {
+.app-feature:nth-of-type(odd) img, .app-feature:nth-of-type(odd) form {
 	float:left;
 }
 
-.app-store-cta {
+.standard-cta {
 	display:inline-block;
 	font-size:1rem;
 	padding:0.5em 1em;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 	background-color:#0450A1;
+	border:1px solid #0450A1;
 	color:#ffffff;
 	margin:1em 0;
 	font-weight:400;
 }
 
-.app-store-cta--victoria {
+.standard-cta--victoria {
 	background-color:#009FE0;
+	border-color:#009FE0;
 	color:#ffffff;
 }
 
-.app-store-cta--circle {
+.standard-cta--circle {
 	background-color:#F8D42D;
+	border-color:#F8D42D;
 	color:#113892;
 }
 
-.app-store-cta--central {
+.standard-cta--central {
 	background-color:#E41F1F;
+	border-color:#E41F1F;
 	color:#ffffff;
 }
 
-.app-store-cta:hover {
+.standard-cta:hover {
 	color:#fffffe;
+}
+
+.standard-cta--circle:hover {
+	color:#113892;
+}
+
+form input {
+	margin-top:0;
+	margin-bottom:0.5rem;
+}
+
+input[type=email] {
+	display:inline-block;
+	font-size:1rem;
+	padding:0.5em 1em;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border:1px solid #aaa;
+	color:#1e1e1e;
+	font-weight:400;
+	box-sizing:border-box;
+}
+
+.submit-form {
+	display:block;
+	margin-top:0;
 }
 
 h1 .line-one, h1 .line-two {
@@ -681,7 +711,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		height:490px;
 	}
 
-	.app-store-cta {
+	.standard-cta {
 		margin:2rem auto 2rem auto;
 	}
 
