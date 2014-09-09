@@ -134,14 +134,18 @@ window.analytics.load("wetjc01dm6");
 window.analytics.page();
 </script>
 <script type="text/javascript">
-	$('a.on-app-store').each(function (e) {
-		$(this).click(function(e) {
-			// TODO: REMOVE ON LAUNCH
-			e.preventDefault();
-			alert('Sorry, the app isn\'t actually available yet - but it will be soon!');
-		});
+	$('a.on-app-store').each(function () {
 		analytics.trackLink(this, 'Clicked App Store Link', {
 			'page-location': ($(this).data('linkLocation') || 'Unknown')
+		});
+
+		// TODO: REMOVE ON LAUNCH
+		$(this).attr('href', '');
+
+		$(this).click(function(e) {
+			e.preventDefault();
+			alert('Sorry, the app isn\'t actually available yet - but it will be soon!');
+			return false;
 		});
 	});
 
