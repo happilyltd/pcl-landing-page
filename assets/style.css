@@ -78,7 +78,7 @@ section, .app-feature {
 	text-align:left;
 }
 
-.app-feature:nth-of-type(even) img, .app-feature:nth-of-type(even) .floater {
+.app-feature:nth-of-type(even) img, .app-feature:nth-of-type(even) .floater, .app-feature:nth-of-type(even) .floater--flexible {
 	float:right;
 }
 
@@ -96,7 +96,7 @@ section, .app-feature {
 	width:auto;
 }
 
-.app-feature:nth-of-type(even) .floater input {
+.app-feature:nth-of-type(even) .floater input, .app-feature:nth-of-type(even) .floater--flexible input {
 	float:right;
 }
 
@@ -108,15 +108,15 @@ section, .app-feature {
 	text-align:right;
 }
 
-.app-feature:nth-of-type(odd) img, .app-feature:nth-of-type(odd) .floater {
+.app-feature:nth-of-type(odd) img, .app-feature:nth-of-type(odd) .floater, .app-feature:nth-of-type(odd) .floater--flexible {
 	float:left;
 }
 
-.app-feature:nth-of-type(odd) .floater input {
+.app-feature:nth-of-type(odd) .floater input, .app-feature:nth-of-type(odd) .floater--flexible input {
 	float:left;
 }
 
-.app-feature:nth-of-type(odd) .floater input[type=submit] {
+.app-feature:nth-of-type(odd) .floater input[type=submit], .app-feature:nth-of-type(odd) .floater--flexible input[type=submit] {
 	clear:left;
 }
 
