@@ -145,8 +145,17 @@ window.analytics.load("wetjc01dm6");
 window.analytics.page();
 </script>
 <script type="text/javascript">
-	$('a.on-app-store').click(function () {
-		// TODO: Something here to trigger tracklink
+	$('a.on-app-store').each(function (e) {
+		// TODO: REMOVE ON LAUNCH
+		e.preventDefault();
+		alert('Sorry, the app isn\'t actually available yet - but it will be soon!');
+		analytics.trackLink(this, 'Clicked App Store Link', {
+			'page-location': ($(this).data('linkLocation') || 'Unknown')
+		});
 	});
+
+	var form = document.getElementById('mc-embedded-subscribe-form');
+
+	analytics.trackForm(form, 'Signed Up tp Newsletter', {});
 </script>
 </html>
