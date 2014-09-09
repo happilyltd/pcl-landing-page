@@ -135,9 +135,11 @@ window.analytics.page();
 </script>
 <script type="text/javascript">
 	$('a.on-app-store').each(function (e) {
-		// TODO: REMOVE ON LAUNCH
-		e.preventDefault();
-		alert('Sorry, the app isn\'t actually available yet - but it will be soon!');
+		$(this).click(function(e) {
+			// TODO: REMOVE ON LAUNCH
+			e.preventDefault();
+			alert('Sorry, the app isn\'t actually available yet - but it will be soon!');
+		});
 		analytics.trackLink(this, 'Clicked App Store Link', {
 			'page-location': ($(this).data('linkLocation') || 'Unknown')
 		});
