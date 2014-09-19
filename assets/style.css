@@ -707,6 +707,16 @@ a {
 	display:none;
 }
 
+/* Specify widths for srcset fixage */
+
+.available-on-app-store {
+	width:350px;
+}
+
+.feature-img {
+	width:250px;
+}
+
 @media only screen 
 and (max-width : 360px) {
 	.mobile-only {
