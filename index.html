@@ -22,7 +22,7 @@
 <div class="app-feature app-feature--download mobile-only">
 	<div>
 		<h1>Pub Crawl: London is available on iPhone, download for free now</h1>
-		<a class="on-app-store" href="https://itunes.apple.com/us/app/pub-crawl-london/id846500966?ls=1&mt=8" data-link-location="Available Now"><img src="assets/available-on-app-store.png" srcset="assets/available-on-app-store@2x.png 2x"></a>
+		<a class="on-app-store" href="https://itunes.apple.com/us/app/pub-crawl-london/id846500966?ls=1&amp;mt=8" data-link-location="Available Now"><img src="assets/available-on-app-store.png" srcset="assets/available-on-app-store@2x.png 2x"></a>
 	</div>
 </div>
 
@@ -102,7 +102,7 @@
 	<div>
 		<div class="reverse-floater">
 			<h1>Keep in touch</h1>
-			<p>Want to keep up to date with the release of the app and new features?</p>
+			<p>Want to keep up to date with the development of the app and new features?</p>
 			<p>Want to know more about Happily products?</p>
 			<p>Sign up to the mailing list. No spam, and we won't share your details with anybody.</p>
 		</div>
@@ -137,15 +137,6 @@ window.analytics.page();
 	$('a.on-app-store').each(function () {
 		analytics.trackLink(this, 'Clicked App Store Link', {
 			'page-location': ($(this).data('linkLocation') || 'Unknown')
-		});
-
-		// TODO: REMOVE ON LAUNCH
-		$(this).attr('href', '');
-
-		$(this).click(function(e) {
-			e.preventDefault();
-			alert('Sorry, the app isn\'t actually available yet - but it will be soon!');
-			return false;
 		});
 	});
 
