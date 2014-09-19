@@ -30,11 +30,11 @@
 	<div class="wrap">
 		<div class="background-screenshots">
 			<div class="device">
-				<img src="screenshots/1.png" srcset="screenshots/1@2x.png 2x" class="background-screenshot ">
-				<img src="screenshots/2.png" srcset="screenshots/2@2x.png 2x" class="background-screenshot ">
-				<img src="screenshots/3.png" srcset="screenshots/3@2x.png 2x" class="background-screenshot ">
-				<img src="screenshots/4.png" srcset="screenshots/4@2x.png 2x" class="background-screenshot ">
-				<img src="screenshots/5.png" srcset="screenshots/5@2x.png 2x" class="background-screenshot ">
+				<img src="screenshots/1.png" srcset="screenshots/1.png 1x, screenshots/1@2x.png 2x" class="background-screenshot ">
+				<img src="screenshots/2.png" srcset="screenshots/2.png 1x, screenshots/2@2x.png 2x" class="background-screenshot ">
+				<img src="screenshots/3.png" srcset="screenshots/3.png 1x, screenshots/3@2x.png 2x" class="background-screenshot ">
+				<img src="screenshots/4.png" srcset="screenshots/4.png 1x, screenshots/4@2x.png 2x" class="background-screenshot ">
+				<img src="screenshots/5.png" srcset="screenshots/5.png 1x, screenshots/5@2x.png 2x" class="background-screenshot ">
 			</div>
 		</div>
 		<div class="device">
@@ -46,7 +46,7 @@
 			<div class="top-bar"></div>
 			<div class="sensor"></div>
 			<div class="speaker"></div>
-			<img src="screenshots/3.png" srcset="screenshots/3@2x.png 2x" class="screen">
+			<img src="screenshots/3.png" srcset="screenshots/3.png 1x, screenshots/3@2x.png 2x" class="screen">
 			<!-- <a class="screen" href="http://marvelapp.com">Marvel</a> -->
 			<div class="bottom-bar"></div>
 			<div class="home"></div>
@@ -57,7 +57,7 @@
 <div class="app-feature app-feature--download desktop-only">
 	<div>
 		<h1>Pub Crawl: London is available on iPhone, download for free now</h1>
-		<a class="on-app-store floater--flexible" href="https://itunes.apple.com/us/app/pub-crawl-london/id846500966?ls=1&mt=8" data-link-location="Available Now"><img src="assets/available-on-app-store.png" srcset="assets/available-on-app-store@2x.png 2x"></a>
+		<a class="on-app-store floater--flexible" href="https://itunes.apple.com/us/app/pub-crawl-london/id846500966?ls=1&mt=8" data-link-location="Available Now"><img src="assets/available-on-app-store.png" srcset="assets/available-on-app-store.png 1x, assets/available-on-app-store@2x.png 2x"></a>
 		<span class="clearfix"></span>
 	</div>
 </div>
@@ -128,6 +128,7 @@
 
 </body>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/srcset.min.js"></script>
 <script type="text/javascript" src="assets/site.js"></script>
 <script type="text/javascript">
 window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
