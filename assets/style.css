@@ -40,6 +40,21 @@ footer > div {
 	margin:0 auto;
 }
 
+footer p {
+	text-align: center;
+}
+
+footer .logo {
+	display: block;
+	margin: 0 auto 2rem auto;
+	width: 8rem;
+	float:none;
+}
+
+footer .logo img {
+	width:100%;
+}
+
 header {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -753,6 +768,10 @@ and (max-width : 320px) {
 		text-align:center;
 		margin:0 auto 2rem auto;
 		width:100%;
+	}
+
+	footer .logo {
+		margin: 0 auto 1rem auto;
 	}
 
 	.phone-wrapper .device {
